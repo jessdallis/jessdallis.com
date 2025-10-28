@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jess Dallis | Email Administrator & Deliverability Expert</title>
   <style>
-    /* Basic reset and layout */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: Georgia, 'Times New Roman', serif;
@@ -17,8 +16,6 @@
       flex-direction: column;
       align-items: center;
     }
-
-    /* Subtle geometric background */
     body::before {
       content: "";
       position: fixed;
@@ -32,24 +29,29 @@
       background-size: 50px 50px;
       z-index: 0;
     }
-
     header, main, footer {
       width: 90%;
       max-width: 800px;
       position: relative;
       z-index: 1;
     }
-
     header {
       text-align: center;
-      margin: 80px 0 40px;
+      margin: 60px 0 20px;
     }
-
-    h1 {
-      font-size: 2.5rem;
-      letter-spacing: 0.05em;
+    nav {
+      margin-top: 10px;
     }
-
+    nav a {
+      color: #000;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 { font-size: 2.5rem; letter-spacing: 0.05em; }
     h2 {
       font-size: 1.4rem;
       border-bottom: 1px solid #000;
@@ -57,33 +59,14 @@
       margin-bottom: 1rem;
       padding-bottom: 0.25rem;
     }
-
-    p {
-      font-size: 1.05rem;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-bottom: 2rem;
-    }
-
+    p { font-size: 1.05rem; margin-bottom: 1rem; }
+    ul { list-style-type: disc; padding-left: 20px; margin-bottom: 2rem; }
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #555;
       margin: 50px 0;
     }
-
-    a {
-      color: #000;
-      text-decoration: underline;
-    }
-    a:hover {
-      color: #555;
-    }
-
     @media (max-width: 600px) {
       h1 { font-size: 2rem; }
       h2 { font-size: 1.2rem; }
@@ -95,6 +78,10 @@
   <header>
     <h1>Jess Dallis</h1>
     <p>Email Administrator & Deliverability Expert</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
   <main>
@@ -123,7 +110,6 @@
   </footer>
 
   <script>
-    // Auto-update year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
